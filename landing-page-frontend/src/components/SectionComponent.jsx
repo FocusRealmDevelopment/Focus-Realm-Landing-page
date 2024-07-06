@@ -13,13 +13,13 @@ function SectionComponent() {
                 <p className="text-gray-600 mb-12 font-[400]">
                     Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia.
                 </p>
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
                     {items.map((item, index) => (
-                        <div key={index} className="p-4">
-                            <div className="flex flex-col items-start">
+                        <div key={index} className="p-4 w-230">
+                            <div className="flex flex-col items-start h-[180px]">
                                 <div className="mb-2 h-16 w-16 bg-gray-200 rounded-full"></div>
                                 <h3 className="text-lg font-[400] text-blue-600 text-left">{item.title}</h3>
-                                <p className="text-gray-600 text-left font-[400">{item.description}</p>
+                                <p className="text-gray-600 text-left font-[300]">{item.description}</p>
                             </div>
                         </div>
                     ))}
