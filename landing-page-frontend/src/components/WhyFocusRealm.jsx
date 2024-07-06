@@ -6,7 +6,7 @@ const WhyFocusRealm = () => {
         <div className="min-h-screen bg-white flex flex-col items-center p-8">
             <div className="max-w-6xl mx-auto flex flex-col lg:flex-row items-center">
                 <div className="lg:w-1/2 text-center lg:text-left lg:pr-8">
-                    <h2 className="text-2xl font-weight-700 mb-4 font-['poppins']">
+                    <h2 className="text-2xl font-[600] mb-4 font-['poppins']">
                         Why need <span className="text-blue-600">Focus Realm</span> app?
                     </h2>
                     <p className="text-gray-600 mb-8 font-normal font-['poppins']">

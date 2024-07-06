@@ -1,5 +1,6 @@
 import Header from './components/header'
 import WhyFocusRealm from './components/WhyFocusRealm'
+import SectionComponent from './components/SectionComponent'
 
 function App() {
   
@@ -7,6 +8,7 @@ function App() {
     <div>
       <Header/>
       <WhyFocusRealm/>
+      <SectionComponent/>
     </div>
   )
 }
