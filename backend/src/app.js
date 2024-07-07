@@ -1,7 +1,8 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 const connectDB = require('./config/db');
-const userRoutes = require('./routes/studentRoutes');
+const studentRoutes = require('./routes/studentRoutes');
+const teacherRoutes = require('./routes/teacherRoutes');
 const config = require('./config/config');
 
 const app = express();
@@ -13,7 +14,8 @@ connectDB();
 app.use(bodyParser.json());
 
 // Routes
-app.use('/api', userRoutes);
+app.use('/api', studentRoutes);
+app.use('/api',teacherRoutes);
 
 const PORT = config.PORT;
 

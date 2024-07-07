@@ -59,4 +59,4 @@ const StudentSchema = new mongoose.Schema({
 
 StudentSchema.pre('save',encryptPassword);
 
-module.exports = mongoose.model('Student', StudentSchema, 'student');
+module.exports = mongoose.model('Student', StudentSchema, 'students');

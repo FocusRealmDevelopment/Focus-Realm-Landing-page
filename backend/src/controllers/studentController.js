@@ -35,6 +35,6 @@ exports.createStudent = async (req, res) => {
     await student.save();
     res.status(201).json({ message: 'Student created successfully', student });
   } catch (err) {
-    res.status(500).json({ message: 'Server error', error: err.message });
+    res.status(500).json({ message: 'Server error student could not be created', error: err.message });
   }
 };
