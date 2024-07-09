@@ -1,8 +1,8 @@
 const express = require('express');
-const { createStudent } = require('../controllers/studentController');
+const { createStudent, upload } = require('../controllers/studentController');
 
 const router = express.Router();
 
-router.post('/students', createStudent);
+router.post('/students',upload ,createStudent);
 
 module.exports = router;

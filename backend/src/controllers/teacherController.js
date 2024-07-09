@@ -1,4 +1,11 @@
 const Teacher = require("../models/Teacher")
+const multer = require('multer');
+const path = require('path');
+
+const storage = require('../config/gridFsStorage');
+const upload = multer({ storage: storage });
+
+exports.upload = upload.single('image');
 
 exports.createTeacher = async (req, res) => {
     try {
@@ -14,6 +21,8 @@ exports.createTeacher = async (req, res) => {
             pinCode,
         }=req.body;
 
+        const imageUrl = req.file ? req.file.filename : null;
+        
         const teacher = new Teacher({
             fullName,
             email,
@@ -24,6 +33,7 @@ exports.createTeacher = async (req, res) => {
             schoolName,
             address,
             pinCode,
+            imageUrl,
 
     });
 

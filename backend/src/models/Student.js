@@ -55,6 +55,9 @@ const StudentSchema = new mongoose.Schema({
     type: String,
     required: true,
   },
+  imageUrl: {
+    type: String,
+  },
 });
 
 StudentSchema.pre('save',encryptPassword);

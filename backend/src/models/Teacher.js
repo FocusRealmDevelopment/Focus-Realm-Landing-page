@@ -44,6 +44,9 @@ const TeacherSchema = new mongoose.Schema({
         type: String,
         required: true,
     },
+    imageUrl: {
+        type: String,
+      },
 
 });
 
