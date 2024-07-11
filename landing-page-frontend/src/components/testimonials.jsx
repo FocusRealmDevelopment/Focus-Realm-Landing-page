@@ -18,7 +18,7 @@ const Testimonial = () => {
                 </p>
             </div>
 
-            <div className="my-16 mx-auto h-[400px] w-full flex items-center justify-center">
+            <div className="my-16 mx-auto h-[400px] w-full flex items-center justify-center pb-16">
                 <Swiper
                     modules={[Navigation, Pagination, Scrollbar, A11y]}
                     spaceBetween={50}

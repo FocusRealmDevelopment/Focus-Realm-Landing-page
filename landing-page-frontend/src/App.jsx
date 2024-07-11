@@ -17,11 +17,8 @@ function App() {
       <SectionComponent/>
       <BannerComponent/>
       <div className='mx-auto flex w-full items-center justify-center'>
-      <Testimonial/>
+        <Testimonial/>
       </div>
-      
-      
-      <br />
       <Footer/>
     </div>
   )
