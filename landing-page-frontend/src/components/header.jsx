@@ -20,7 +20,7 @@ const Header = () => {
   }, []);
 
   return (
-    <header className={`w-full z-50 transition-shadow ${isScrolled ? 'fixed top-0 left-0 shadow-md bg-white' : 'relative'}`}>
+    <header className={`w-full z-50 shadow-lg transition-shadow ${isScrolled ? 'fixed top-0 left-0 shadow-md bg-white' : 'relative'}`}>
       <div className="container mx-auto px-4 py-4 flex justify-between items-center">
         <div className="text-2xl font-bold">
           <img
